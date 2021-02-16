@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Step_3: Your Review</title>
+</head>
+
+<body>
+    <table border="2" width="450">
+        <tr>
+            <td bgcolor="#a4dd9e">Step 1: Account</td>
+            <td bgcolor="#a4dd9e">Step 2: Personal Details</td>
+            <td bgcolor="#72a3de">Step 3: Your Review</td>
+        </tr>
+    </table>
+    <br />
+    <form action="../index.html" method="post">
+        <fieldset style="width:420px">
+            <legend><strong>Your Review:</strong></legend>
+            <p><strong>How did you hear about us?</strong>
+                <select required name="devices">
+                    <option selected disabled value="">Select Your Option</option>
+                    <option required value="Naat">Naat</option>
+                    <option required value="radio">Bayan</option>
+                    <option required value="computer">Qawwali</option>
+                </select>
+            </p>
+            <p>
+                <strong>Would you visit again?</strong><br />
+                <input required type="radio" name="visit" value="Yes" /> <strong>Yes</strong>
+                <input required type="radio" name="visit" value="No" /> <strong>No</strong>
+                <input required type="radio" name="visit" value="Maybe" /> <strong>Maybe</strong>
+            </p>
+            <p><strong>Comments:</strong>
+                <br />
+                <textarea required name="comments" cols="35" rows="4"
+                    placeholder="Enter your comments here..."></textarea>
+            </p>
+            <p><strong>Documents:</strong>
+                <br />
+                <input required type="file" name="user-song" /><br />
+            </p>
+            <input type="checkbox" required name="sign me up" value="sign" checked="checked" /><strong>Sign me up for
+                email
+                updates</strong>
+            <br />
+            <br />
+            <a href="../Step 2 Personal Detail/index.html"><img src="../Images/back.png" alt="Back" height="45"
+                    width="130"></a>
+            <input type="image" height="45" width="130" src="../Images/submit.png" name="Submit ">
+        </fieldset>
+    </form>
+</body>
+
+</html>
